@@ -1,0 +1,35 @@
+
+.student{
+    border: 2px solid black;
+    padding: 10px;
+    width: 300px;
+    cursor: pointer;
+    color: azure;
+    border-color: antiquewhite;
+    text-align: center;
+
+}
+.grid-view{
+    background-color: black;
+    display: grid;
+    justify-content: space-between;
+    align-items: 30px;
+    margin: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+@media(max-width:900px){
+    .grid-view{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:400px){
+    .grid-view{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:300px){
+    .grid-view{
+        grid-template-columns: 1;
+    }
+}
